@@ -58,14 +58,17 @@
           >
         </div>
 
-        <!-- Search input with search icon on the right -->
         <div class="search flex items-center">
           <input
             type="text"
-            class="px-4 py-2 border-2 border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
+            id="searchInput"
+            class="px-4 py-2 border-2 border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500 transition-all duration-300 w-0 opacity-0"
             placeholder="Search..."
           />
-          <button class="px-4 py-2 bg-blue-500 text-white rounded-r-md">
+          <button
+            id="searchButton"
+            class="px-4 py-2 text-blue-900 rounded-r-md hover:text-gray-300 transition-colors duration-300"
+          >
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -334,4 +337,38 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const searchButton = document.getElementById("searchButton");
+    let isInputVisible = false;
+
+    searchButton.addEventListener("click", () => {
+      isInputVisible = !isInputVisible;
+      if (isInputVisible) {
+        searchInput.classList.remove("w-0", "opacity-0");
+        searchInput.classList.add("w-64", "opacity-100");
+        searchInput.focus();
+      } else {
+        searchInput.classList.remove("w-64", "opacity-100");
+        searchInput.classList.add("w-0", "opacity-0");
+      }
+    });
+
+    searchInput.addEventListener("keypress", (e) => {
+      if (e.key === "Enter") {
+        e.preventDefault();
+        const searchQuery = searchInput.value.trim();
+        if (searchQuery) {
+          // Here you would typically send the search query to the backend
+          console.log("Search query submitted:", searchQuery);
+          // Reset the input and hide it after submission
+          searchInput.value = "";
+          searchInput.classList.remove("w-64", "opacity-100");
+          searchInput.classList.add("w-0", "opacity-0");
+          isInputVisible = false;
+        }
+      }
+    });
+  </script>
 </html>
