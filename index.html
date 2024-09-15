@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body class="overflow-x-hidden">
+    <header>
+      <section
+        class="bg-slate-200 h-10 px-32 gap-4 flex justify-between items-center"
+      >
+        <div class="flex items-center gap-4">
+          <div class="flex items-center gap-2">
+            <i class="fas fa-envelope"></i>
+            <span>info@reen.com</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fas fa-phone"></i>
+            <span>+977 98-22002244</span>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+      </section>
+
+      <nav class="bg-white px-32 py-8 flex justify-between items-center">
+        <div class="logo font-semibold text-4xl text-blue-900">
+          <a href="#">REEN.</a>
+        </div>
+
+        <div class="nav-links space-x-4">
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600">HOME</a>
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600"
+            >PORTFOLIO</a
+          >
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600">BLOG</a>
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600"
+            >PAGES</a
+          >
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600"
+            >FEATURES</a
+          >
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600"
+            >MEGA MENU</a
+          >
+          <a href="#" class="text-sm text-blue-900 hover:text-gray-600"
+            >CONTACT</a
+          >
+        </div>
+
+        <!-- Search input with search icon on the right -->
+        <div class="search flex items-center">
+          <input
+            type="text"
+            class="px-4 py-2 border-2 border-gray-300 rounded-l-md focus:outline-none focus:border-blue-500"
+            placeholder="Search..."
+          />
+          <button class="px-4 py-2 bg-blue-500 text-white rounded-r-md">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <div
+      class="relative h-[600px] bg-cover bg-center"
+      style="
+        background-image: url('https://cdn.pixabay.com/photo/2017/05/11/11/15/workplace-2303851_1280.jpg');
+      "
+    >
+      <div
+        class="absolute inset-0 bg-blue-600/30 backdrop-blur-lg flex justify-center items-center"
+      >
+        <div class="text-center p-8">
+          <h1 class="text-6xl font-extrabold text-white mb-4">
+            MADE FOR DESIGNERS
+          </h1>
+          <p class="text-lg text-white mb-8 mx-64">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
+            quos est illo commodi obcaecati magnam sed praesentium, alias
+            perspiciatis, perferendis ipsa quod deserunt. Doloremque incidunt
+          </p>
+          <button
+            class="bg-emerald-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+          >
+            Get Started Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto px-4 py-10">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-primary-DEFAULT">
+          Beautiful. Clean. Responsive.
+        </h1>
+        <p class="mt-4 text-muted-foreground">
+          REEN is a high-quality solution for those who want a beautiful website
+          in no time. It's fully responsive and will adapt itself to any mobile
+          device. iPad, iPhone, Android, it doesn't matter. Your content will
+          always looks its absolute best.
+        </p>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+          <div
+            class="p-6 border rounded-lg text-left bg-card-DEFAULT flex gap-4"
+          >
+            <i class="fa-regular fa-heart text-4xl text-emerald-500"></i>
+            <div>
+              <h2 class="text-xl font-semibold text-primary-DEFAULT">
+                Passion
+              </h2>
+              <p class="text-muted-foreground mt-4">
+                Magnis modipase que lib voloratati andigen daepeditum quiate re
+                proem aut labor. Lacaecque quia sitrem rest non restibus mais o
+                dem tumquam core posae volor remped modis volor.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="p-6 border rounded-lg text-left bg-card-DEFAULT flex gap-4"
+          >
+            <i class="fa-regular fa-lightbulb text-4xl text-emerald-500"></i>
+            <div>
+              <h2 class="text-xl font-semibold text-primary-DEFAULT">
+                Creativity
+              </h2>
+              <p class="text-muted-foreground mt-4">
+                Magnis modipase que lib voloratati andigen daepeditum quiate re
+                proem aut labor. Lacaecque quia sitrem rest non restibus mais o
+                dem tumquam core posae volor remped modis volor.
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="p-6 border rounded-lg text-left bg-card-DEFAULT flex gap-4"
+          >
+            <i class="fa-regular fa-star text-4xl text-emerald-500"></i>
+            <div>
+              <h2 class="text-xl font-semibold text-primary-DEFAULT">
+                Quality
+              </h2>
+              <p class="text-muted-foreground mt-4">
+                Magnis modipase que lib voloratati andigen daepeditum quiate re
+                proem aut labor. Lacaecque quia sitrem rest non restibus mais o
+                dem tumquam core posae volor remped modis volor.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
